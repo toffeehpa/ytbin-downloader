@@ -22,10 +22,10 @@
     "*://*.ytimg.com/*"
   ],
 
-  "background": {
-    "service_worker": "assets/js/bg.js",
-    "type": "module"
-  },
+"background": {
+  "scripts": ["assets/js/background.js"],
+  "type": "module"
+},
 
   "action": {
     "default_popup": "popup.html",
@@ -45,9 +45,9 @@
 "content_scripts": [
   {
     "matches": ["*://*.youtube.com/*"],
-    "css": ["assets/css/youtube.css", "assets/css/panel.css"],
     "js": [
       "assets/js/lib/messaging.js",
+      "assets/js/content/components/download-button.js",
       "assets/js/content/youtube.js"
     ],
     "run_at": "document_idle"

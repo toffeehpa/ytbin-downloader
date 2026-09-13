@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "bgutils-js": "^4.0.3",
+    "youtubei.js": "^18.0.0"
+  }
+}
